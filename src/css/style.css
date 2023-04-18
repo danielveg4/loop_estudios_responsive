@@ -23,5 +23,243 @@ a {
 
 body {
   margin: 0;
-  background-image: url(../assets/images/sleep-cat.jpeg);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.toggle-menu {
+  position: absolute;
+  top: 4rem;
+  left: 18em;
+  cursor: pointer;
+  width: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .toggle-menu {
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background-image: url("/assets/images/mobile/image-hero.jpg");
+  background-size: cover;
+}
+@media screen and (min-width: 600px) {
+  .header {
+    background-image: url("/assets/images/desktop/image-hero.jpg");
+    width: 1440px;
+    height: 650px;
+    background-size: contain;
+  }
+}
+.logo {
+  width: 120px;
+  position: relative;
+  top: 2rem;
+  margin-left: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    margin-left: 5rem;
+  }
+}
+
+.main-menu {
+  position: relative;
+  margin-left: 2.3rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-items: center;
+  top: -8rem;
+}
+
+@media screen and (min-width: 600px) {
+  .main-menu {
+    top: -35.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 2rem;
+  }
+}
+
+.main-menu-item {
+  font-size: 1rem;
+  color: white;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .main-menu-item {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.header__title {
+  height: 200px;
+  border: 1px solid white;
+  color: white;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 1rem;
+  position: relative;
+  top: -13rem;
+  font-weight: lighter;
+}
+
+@media screen and (min-width: 600px) {
+  .header__title {
+    top: 0;
+    margin-left: 10rem;
+    width: 650px;
+    height: 278px;
+    padding: 3rem;
+    font-size: 4.3rem;
+  }
+}
+
+.portal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  margin-top: 4em;
+  text-align: center;
+}
+
+.portal_content {
+  margin: 2.5rem;
+  margin-top: 1rem;
+}
+
+.portal_content__text {
+  color: #979797;
+}
+
+.portal_content__title {
+  font-weight: lighter;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: lighter;
+  gap: 1rem;
+}
+
+.cards__title {
+  font-size: 2rem;
+}
+
+.card {
+  color: white;
+  background-size: cover;
+  height: 120px;
+  width: 327px;
+  padding-left: 1rem;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-right: 8rem;
+  line-height: 2rem;
+}
+
+.card__1 {
+  background-image: url("/assets/images/mobile/image-deep-earth.jpg");
+}
+
+.card__2 {
+  background-image: url("/assets/images/mobile/image-night-arcade.jpg");
+}
+
+.card__3 {
+  background-image: url("/assets/images/mobile/image-soccer-team.jpg");
+}
+
+.card__4 {
+  background-image: url("/assets/images/mobile/image-grid.jpg");
+  padding-right: 12rem;
+}
+
+.card__5 {
+  background-image: url("/assets/images/mobile/image-from-above.jpg");
+}
+
+.card__6 {
+  background-image: url("/assets/images/mobile/image-pocket-borealis.jpg");
+}
+
+.card__7 {
+  background-image: url("/assets/images/mobile/image-curiosity.jpg");
+}
+
+.card__8 {
+  background-image: url("/assets/images/mobile/image-fisheye.jpg");
+}
+
+.cards__see {
+  height: 40px;
+  width: 157px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: black;
+}
+
+.footer_copyright {
+  margin: -1rem;
+  margin-top: 1rem;
+  font-weight: lighter;
+  color: white;
+}
+
+.footer_socialmedia {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_socialmedia_fb {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 1rem;
+  color: white;
+  font-weight: lighter;
+}
+
+.footer_logo {
+  width: 50%;
 }
